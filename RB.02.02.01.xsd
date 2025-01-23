@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--(C) ACPR / Banque de France Taxonomie RUBA v1.2.0-->
+<?officialURI http://acpr.banque-france.fr/xbrl/ruba/fws/v1.2.0/tab/RB.02.02.01/RB.02.02.01.xsd?>
+<?taxonomy-version v1.2.0?>
+<?taxonomy-date 2024-06-24?>
+<xs:schema xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:model="http://www.eurofiling.info/xbrl/ext/model" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:fr_tab_RB.02.02.01="http://acpr.banque-france.fr/xbrl/ruba/fws/v1.2.0/tab/RB.02.02.01" xmlns:gen="http://xbrl.org/2008/generic" targetNamespace="http://acpr.banque-france.fr/xbrl/ruba/fws/v1.2.0/tab/RB.02.02.01" xsi:schemaLocation="http://www.xbrl.org/2003/instance http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd http://www.eurofiling.info/xbrl/ext/model http://www.eurofiling.info/eu/fr/xbrl/ext/model.xsd" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.eurofiling.info/xbrl/ext/model" schemaLocation="http://www.eurofiling.info/eu/fr/xbrl/ext/model.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xlink:type="simple" xlink:href="RB.02.02.01-def.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef"/>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01" id="role">
+        <link:usedOn>gen:link</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/001" id="role001">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/002" id="role002">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/003" id="role003">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/004" id="role004">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/004/1" id="role004_1">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/005" id="role005">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/005/1" id="role005_1">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/006" id="role006">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/006/1" id="role006_1">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/007" id="role007">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/008" id="role008">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/009" id="role009">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/010" id="role010">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/011" id="role011">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/012" id="role012">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/013" id="role013">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/014" id="role014">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/015" id="role015">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/016" id="role016">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/017" id="role017">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/017/1" id="role017_1">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/018" id="role018">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/019" id="role019">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/020" id="role020">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/021" id="role021">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/022" id="role022">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/023" id="role023">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/024" id="role024">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/025" id="role025">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/026" id="role026">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/027" id="role027">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/028" id="role028">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/029" id="role029">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/030" id="role030">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/031" id="role031">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/032" id="role032">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/033" id="role033">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/034" id="role034">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/035" id="role035">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/036" id="role036">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/037" id="role037">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/038" id="role038">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/039" id="role039">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/040" id="role040">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/041" id="role041">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/042" id="role042">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/043" id="role043">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/044" id="role044">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/045" id="role045">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/046" id="role046">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/047" id="role047">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/048" id="role048">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/049" id="role049">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/050" id="role050">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/051" id="role051">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/052" id="role052">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/053" id="role053">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/054" id="role054">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01/055" id="role055">
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:linkbaseRef xlink:type="simple" xlink:href="../../../../dict/dom/am/mem-lab-fr.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef"/>
+      <link:linkbaseRef xlink:type="simple" xlink:href="../../../../dict/dom/ba/mem-lab-fr.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef"/>
+      <link:linkbaseRef xlink:type="simple" xlink:href="../../../../dict/dom/cu/mem-lab-fr.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef"/>
+      <link:linkbaseRef xlink:type="simple" xlink:href="../../../../dict/dom/ga/mem-lab-fr.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef"/>
+      <link:linkbaseRef xlink:type="simple" xlink:href="../../../../dict/dom/in/mem-lab-fr.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef"/>
+      <link:linkbaseRef xlink:type="simple" xlink:href="../../../../dict/dom/mc/mem-lab-fr.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef"/>
+      <link:linkbaseRef xlink:type="simple" xlink:href="../../../../dict/dom/sc/mem-lab-fr.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef"/>
+      <link:linkbaseRef xlink:type="simple" xlink:href="RB.02.02.01-lab-fr.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+      <link:linkbaseRef xlink:type="simple" xlink:href="RB.02.02.01-lab-codes.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+      <link:linkbaseRef xlink:type="simple" xlink:href="RB.02.02.01-rend.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

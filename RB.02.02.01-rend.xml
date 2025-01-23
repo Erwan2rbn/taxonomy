@@ -1,0 +1,959 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--(C) ACPR / Banque de France Taxonomie RUBA v1.2.0-->
+<?officialURI http://acpr.banque-france.fr/xbrl/ruba/fws/v1.2.0/tab/RB.02.02.01/RB.02.02.01-rend.xml?>
+<?taxonomy-version v1.2.0?>
+<?taxonomy-date 2024-06-24?>
+<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:table="http://xbrl.org/2014/table" xmlns:df="http://xbrl.org/2008/filter/dimension" xmlns:formula="http://xbrl.org/2008/formula" xmlns:gen="http://xbrl.org/2008/generic" xmlns:fr_AM="http://acpr.banque-france.fr/xbrl/ruba/dict/dom/AM" xmlns:fr_BA="http://acpr.banque-france.fr/xbrl/ruba/dict/dom/BA" xmlns:fr_CU="http://acpr.banque-france.fr/xbrl/ruba/dict/dom/CU" xmlns:fr_GA="http://acpr.banque-france.fr/xbrl/ruba/dict/dom/GA" xmlns:fr_IN="http://acpr.banque-france.fr/xbrl/ruba/dict/dom/IN" xmlns:fr_MC="http://acpr.banque-france.fr/xbrl/ruba/dict/dom/MC" xmlns:fr_SC="http://acpr.banque-france.fr/xbrl/ruba/dict/dom/SC" xmlns:fr_dim="http://acpr.banque-france.fr/xbrl/ruba/dict/dim" xmlns:fr_met="http://acpr.banque-france.fr/xbrl/ruba/dict/met" xsi:schemaLocation="http://xbrl.org/2014/table http://www.xbrl.org/2014/table.xsd http://xbrl.org/2008/formula http://www.xbrl.org/2008/formula.xsd http://xbrl.org/2008/filter/dimension http://www.xbrl.org/2008/dimension-filter.xsd">
+  <link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2014/aspect-node-filter" xlink:type="simple" xlink:href="http://www.xbrl.org/2014/table.xsd#aspect-node-filter"/>
+  <link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2014/breakdown-tree" xlink:type="simple" xlink:href="http://www.xbrl.org/2014/table.xsd#breakdown-tree"/>
+  <link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:type="simple" xlink:href="http://www.xbrl.org/2014/table.xsd#definition-node-subtree"/>
+  <link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2014/table-breakdown" xlink:type="simple" xlink:href="http://www.xbrl.org/2014/table.xsd#table-breakdown"/>
+  <link:roleRef roleURI="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01" xlink:type="simple" xlink:href="RB.02.02.01.xsd#role"/>
+  <gen:link xlink:type="extended" xlink:role="http://acpr.banque-france.fr/xbrl/ruba/role/fws/v1.2.0/tab/RB.02.02.01">
+    <table:table xlink:type="resource" xlink:label="fr_tRB.02.02.01" id="fr_tRB.02.02.01"/>
+    <table:breakdown xlink:type="resource" xlink:label="fr_a1" id="fr_a1" parentChildOrder="parent-first"/>
+    <table:tableBreakdownArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/table-breakdown" xlink:from="fr_tRB.02.02.01" xlink:to="fr_a1" axis="x" order="1"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c2" id="fr_c2" merge="true" abstract="true"/>
+    <table:breakdownTreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/breakdown-tree" xlink:from="fr_a1" xlink:to="fr_c2" order="0"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c1" id="fr_c1" abstract="true"/>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c2" xlink:to="fr_c1" order="0"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c3" id="fr_c3"/>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c1" xlink:to="fr_c3" order="1"/>
+    <table:breakdown xlink:type="resource" xlink:label="fr_a2" id="fr_a2" parentChildOrder="parent-first"/>
+    <table:tableBreakdownArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/table-breakdown" xlink:from="fr_tRB.02.02.01" xlink:to="fr_a2" axis="y" order="2"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c5" id="fr_c5" merge="true" abstract="true"/>
+    <table:breakdownTreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/breakdown-tree" xlink:from="fr_a2" xlink:to="fr_c5" order="0"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c4" id="fr_c4">
+      <formula:concept>
+        <formula:qname>fr_met:mi12</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r100</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra010010</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c5" xlink:to="fr_c4" order="0"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c6" id="fr_c6">
+      <formula:concept>
+        <formula:qname>fr_met:mi10</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r0</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra010020</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c4" xlink:to="fr_c6" order="1"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c7" id="fr_c7">
+      <formula:concept>
+        <formula:qname>fr_met:mi10</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r0</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra010040</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c6" xlink:to="fr_c7" order="2"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c8" id="fr_c8">
+      <formula:concept>
+        <formula:qname>fr_met:mi10</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r0</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra010120</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c6" xlink:to="fr_c8" order="3"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c9" id="fr_c9">
+      <formula:concept>
+        <formula:qname>fr_met:mi13</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r102</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:INT">
+        <formula:member>
+          <formula:qname>fr_IN:r102</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra010180</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c4" xlink:to="fr_c9" order="4"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c10" id="fr_c10">
+      <formula:concept>
+        <formula:qname>fr_met:mi13</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r102</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra010190</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c4" xlink:to="fr_c10" order="5"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c11" id="fr_c11">
+      <formula:concept>
+        <formula:qname>fr_met:mi13</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r102</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra010070</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c4" xlink:to="fr_c11" order="6"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c12" id="fr_c12">
+      <formula:concept>
+        <formula:qname>fr_met:mi13</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r102</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra010230</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c4" xlink:to="fr_c12" order="7"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c13" id="fr_c13">
+      <formula:concept>
+        <formula:qname>fr_met:mi13</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r102</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra010260</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c4" xlink:to="fr_c13" order="8"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c14" id="fr_c14">
+      <formula:concept>
+        <formula:qname>fr_met:mi13</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r102</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra010270</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c4" xlink:to="fr_c14" order="9"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c15" id="fr_c15">
+      <formula:concept>
+        <formula:qname>fr_met:mi14</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r100</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra010290</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c4" xlink:to="fr_c15" order="10"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c16" id="fr_c16">
+      <formula:concept>
+        <formula:qname>fr_met:mi18</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r0</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra010300</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c4" xlink:to="fr_c16" order="11"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c17" id="fr_c17">
+      <formula:concept>
+        <formula:qname>fr_met:mi13</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r0</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:INT">
+        <formula:member>
+          <formula:qname>fr_IN:r103</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra010320</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c4" xlink:to="fr_c17" order="12"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c18" id="fr_c18">
+      <formula:concept>
+        <formula:qname>fr_met:mi12</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r100</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra020020</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c5" xlink:to="fr_c18" order="13"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c19" id="fr_c19">
+      <formula:concept>
+        <formula:qname>fr_met:mi13</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r102</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra020130</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c18" xlink:to="fr_c19" order="14"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c20" id="fr_c20">
+      <formula:concept>
+        <formula:qname>fr_met:mi13</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r102</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra020360</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c18" xlink:to="fr_c20" order="15"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c21" id="fr_c21">
+      <formula:concept>
+        <formula:qname>fr_met:mi13</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r102</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra020420</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c18" xlink:to="fr_c21" order="16"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c22" id="fr_c22">
+      <formula:concept>
+        <formula:qname>fr_met:mi13</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r102</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra020370</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c18" xlink:to="fr_c22" order="17"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c23" id="fr_c23">
+      <formula:concept>
+        <formula:qname>fr_met:mi13</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r102</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra020380</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c18" xlink:to="fr_c23" order="18"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c24" id="fr_c24">
+      <formula:concept>
+        <formula:qname>fr_met:mi13</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r102</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra020430</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c18" xlink:to="fr_c24" order="19"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c25" id="fr_c25">
+      <formula:concept>
+        <formula:qname>fr_met:mi14</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r100</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra020410</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c18" xlink:to="fr_c25" order="20"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c26" id="fr_c26">
+      <formula:concept>
+        <formula:qname>fr_met:mi18</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r0</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra020400</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c18" xlink:to="fr_c26" order="21"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c27" id="fr_c27">
+      <formula:concept>
+        <formula:qname>fr_met:mi13</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r0</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:INT">
+        <formula:member>
+          <formula:qname>fr_IN:r103</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra020440</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c18" xlink:to="fr_c27" order="22"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c28" id="fr_c28">
+      <formula:concept>
+        <formula:qname>fr_met:mi12</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r100</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra030010</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c5" xlink:to="fr_c28" order="23"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c29" id="fr_c29">
+      <formula:concept>
+        <formula:qname>fr_met:mi10</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r102</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra030110</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c28" xlink:to="fr_c29" order="24"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c30" id="fr_c30">
+      <formula:concept>
+        <formula:qname>fr_met:mi10</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r103</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra030460</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:TIT">
+        <formula:member>
+          <formula:qname>fr_AM:r150</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c28" xlink:to="fr_c30" order="25"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c31" id="fr_c31">
+      <formula:concept>
+        <formula:qname>fr_met:mi12</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r102</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra030750</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:TIT">
+        <formula:member>
+          <formula:qname>fr_AM:r150</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c28" xlink:to="fr_c31" order="26"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c32" id="fr_c32">
+      <formula:concept>
+        <formula:qname>fr_met:mi12</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r102</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra030770</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:TIT">
+        <formula:member>
+          <formula:qname>fr_AM:r150</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c28" xlink:to="fr_c32" order="27"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c33" id="fr_c33">
+      <formula:concept>
+        <formula:qname>fr_met:mi12</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r102</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra030980</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:TIT">
+        <formula:member>
+          <formula:qname>fr_AM:r150</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c28" xlink:to="fr_c33" order="28"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c34" id="fr_c34">
+      <formula:concept>
+        <formula:qname>fr_met:mi12</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r0</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra031130</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c28" xlink:to="fr_c34" order="29"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c35" id="fr_c35">
+      <formula:concept>
+        <formula:qname>fr_met:mi10</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r0</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra031380</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c28" xlink:to="fr_c35" order="30"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c36" id="fr_c36">
+      <formula:concept>
+        <formula:qname>fr_met:mi10</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r0</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra031420</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c28" xlink:to="fr_c36" order="31"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c37" id="fr_c37">
+      <formula:concept>
+        <formula:qname>fr_met:mi10</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r0</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra031430</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c28" xlink:to="fr_c37" order="32"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c38" id="fr_c38">
+      <formula:concept>
+        <formula:qname>fr_met:mi12</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r0</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra031390</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c28" xlink:to="fr_c38" order="33"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c39" id="fr_c39">
+      <formula:concept>
+        <formula:qname>fr_met:mi10</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r0</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra031490</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c28" xlink:to="fr_c39" order="34"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c40" id="fr_c40">
+      <formula:concept>
+        <formula:qname>fr_met:mi14</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r100</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra031730</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c28" xlink:to="fr_c40" order="35"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c41" id="fr_c41">
+      <formula:concept>
+        <formula:qname>fr_met:mi18</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r0</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra031740</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c28" xlink:to="fr_c41" order="36"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c42" id="fr_c42">
+      <formula:concept>
+        <formula:qname>fr_met:mi13</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r0</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:INT">
+        <formula:member>
+          <formula:qname>fr_IN:r103</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra031750</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c28" xlink:to="fr_c42" order="37"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c43" id="fr_c43">
+      <formula:concept>
+        <formula:qname>fr_met:mi13</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r0</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:INT">
+        <formula:member>
+          <formula:qname>fr_IN:r103</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:rh020020</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c42" xlink:to="fr_c43" order="38"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c44" id="fr_c44">
+      <formula:concept>
+        <formula:qname>fr_met:mi12</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r100</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra040010</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c5" xlink:to="fr_c44" order="39"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c45" id="fr_c45">
+      <formula:concept>
+        <formula:qname>fr_met:mi12</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r102</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra040340</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c44" xlink:to="fr_c45" order="40"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c46" id="fr_c46">
+      <formula:concept>
+        <formula:qname>fr_met:mi12</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r102</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra040250</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c44" xlink:to="fr_c46" order="41"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c47" id="fr_c47">
+      <formula:concept>
+        <formula:qname>fr_met:mi10</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r0</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra040230</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c44" xlink:to="fr_c47" order="42"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c48" id="fr_c48">
+      <formula:concept>
+        <formula:qname>fr_met:mi12</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r0</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra040070</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c44" xlink:to="fr_c48" order="43"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c49" id="fr_c49">
+      <formula:concept>
+        <formula:qname>fr_met:mi12</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r0</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra040370</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c44" xlink:to="fr_c49" order="44"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c50" id="fr_c50">
+      <formula:concept>
+        <formula:qname>fr_met:mi12</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r0</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra040040</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c44" xlink:to="fr_c50" order="45"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c51" id="fr_c51">
+      <formula:concept>
+        <formula:qname>fr_met:mi11</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r100</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra040660</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c44" xlink:to="fr_c51" order="46"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c52" id="fr_c52">
+      <formula:concept>
+        <formula:qname>fr_met:mi18</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r0</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra040640</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c44" xlink:to="fr_c52" order="47"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c53" id="fr_c53">
+      <formula:concept>
+        <formula:qname>fr_met:mi13</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r0</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:INT">
+        <formula:member>
+          <formula:qname>fr_IN:r103</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra040590</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c44" xlink:to="fr_c53" order="48"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c54" id="fr_c54">
+      <formula:concept>
+        <formula:qname>fr_met:mi10</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra050010</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c5" xlink:to="fr_c54" order="49"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c55" id="fr_c55">
+      <formula:concept>
+        <formula:qname>fr_met:mi10</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra050020</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c54" xlink:to="fr_c55" order="50"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c56" id="fr_c56">
+      <formula:concept>
+        <formula:qname>fr_met:mi10</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra050030</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c54" xlink:to="fr_c56" order="51"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c57" id="fr_c57">
+      <formula:concept>
+        <formula:qname>fr_met:mi10</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:CDR">
+        <formula:member>
+          <formula:qname>fr_AM:r100</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra990010</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c5" xlink:to="fr_c57" order="52"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c58" id="fr_c58">
+      <formula:concept>
+        <formula:qname>fr_met:mi10</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:MCA">
+        <formula:member>
+          <formula:qname>fr_MC:ra030520</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c5" xlink:to="fr_c58" order="53"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c59" id="fr_c59">
+      <formula:concept>
+        <formula:qname>fr_met:mi10</formula:qname>
+      </formula:concept>
+      <formula:explicitDimension dimension="fr_dim:MCH">
+        <formula:member>
+          <formula:qname>fr_MC:rn020040</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c5" xlink:to="fr_c59" order="54"/>
+    <table:breakdown xlink:type="resource" xlink:label="fr_a3" id="fr_a3" parentChildOrder="parent-first"/>
+    <table:tableBreakdownArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/table-breakdown" xlink:from="fr_tRB.02.02.01" xlink:to="fr_a3" axis="z" order="3"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c61" id="fr_c61" merge="true" abstract="true">
+      <formula:explicitDimension dimension="fr_dim:BAS">
+        <formula:member>
+          <formula:qname>fr_BA:r100</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:GAZ">
+        <formula:member>
+          <formula:qname>fr_GA:r100</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:MON">
+        <formula:member>
+          <formula:qname>fr_CU:r100</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+      <formula:explicitDimension dimension="fr_dim:PER">
+        <formula:member>
+          <formula:qname>fr_SC:r0</formula:qname>
+        </formula:member>
+      </formula:explicitDimension>
+    </table:ruleNode>
+    <table:breakdownTreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/breakdown-tree" xlink:from="fr_a3" xlink:to="fr_c61" order="0"/>
+    <table:ruleNode xlink:type="resource" xlink:label="fr_c62" id="fr_c62"/>
+    <table:definitionNodeSubtreeArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/definition-node-subtree" xlink:from="fr_c61" xlink:to="fr_c62" order="0"/>
+  </gen:link>
+</link:linkbase>
