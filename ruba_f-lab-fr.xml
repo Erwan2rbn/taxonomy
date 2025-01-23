@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--(C) ACPR / Banque de France Taxonomie RUBA v1.2.0-->
+<?officialURI http://acpr.banque-france.fr/xbrl/ruba/fws/v1.2.0/mod/ruba_f-lab-fr.xml?>
+<?taxonomy-version v1.2.0?>
+<?taxonomy-date 2024-06-24?>
+<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrldt="http://xbrl.org/2005/xbrldt">
+  <link:labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+    <link:loc xlink:type="locator" xlink:label="loc_fr_ruba_f" xlink:href="ruba_f.xsd#fr_ruba_f"/>
+    <link:label xml:lang="fr" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="label_fr_ruba_f" xlink:type="resource">RUBA Taxonomy - 2024-06-24</link:label>
+    <link:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:type="arc" xlink:from="loc_fr_ruba_f" xlink:to="label_fr_ruba_f"/>
+  </link:labelLink>
+</link:linkbase>
